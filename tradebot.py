@@ -14,12 +14,13 @@ def get_stock_data(symbol, start_date, end_date):
         print("Hata:", e)
         return None
 
-# Kullanıcıdan hisse sembolünü alınması
+# Kullanıcıdan hisse sembolünü ve bitiş tarihini alınması
 symbol = input("Lütfen hisse sembolünü girin (örn. GARAN.IS): ")
+end_date_input = input("Lütfen bitiş tarihini girin (YYYY-MM-DD formatında): ")
+end_date = datetime.datetime.strptime(end_date_input, '%Y-%m-%d')
 
 # Veri aralığını belirleme
 start_date = datetime.datetime(2024, 4, 1)
-end_date = datetime.datetime(2024,4,21)
 
 # Hisse fiyatlarını al
 data = get_stock_data(symbol, start_date, end_date)
