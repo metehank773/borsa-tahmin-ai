@@ -1,5 +1,3 @@
-# borsa-tahmin-ai
-makine öğrenimi ile borsa fiyat tahmini
  Kod, hisse senedi verilerini almak, verileri analiz etmek, bir lineer regresyon modeli oluşturmak, tahminler yapmak ve modelin performansını değerlendirmek için kullanılır.
 
 Adımlar:
